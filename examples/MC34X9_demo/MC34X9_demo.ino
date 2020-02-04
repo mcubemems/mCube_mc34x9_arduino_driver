@@ -21,7 +21,7 @@
 
 #include <MC34X9.h>
 
-/** bSpi : I2C/SPI bus selection.        SPI: 0,       I2C: 1           */
+/*** bSpi: I2C/SPI bus selection.  SPI: 0, I2C: 1 ***/
 const uint8_t bSpi = 1;
 
 // Chip Select & Address
@@ -32,15 +32,15 @@ const uint8_t I2CAddress = 0x4c; // I2C address
 // Arduino interrupt pin
 const int INTERRUPT_PIN = 8;
 
-// *****FIFO control*****
+// *** FIFO control ***/
 int FIFO_THRE_SIZE = 30;
 // FIFO Interrupt
 const bool enableFifoThrINT = false;
 // For FIFO feature, enable FIFO interrupt will automatically enable FIFO feature
 bool enableFIFO = false;
 
-// *****Motion control*****
-// Enable motion feature below also enable correspond motion interrupt
+// *** Motion control ***/
+// Enabling motion feature below also enables corresponded motion interrupt
 const bool enableTILT = false;
 const bool enableFLIP = false;
 const bool enableANYM = true;
